@@ -4,7 +4,7 @@ import json
 from flask import Flask, request, jsonify
 import requests
 
-# ========= Config =========
+# ========= Config ==========
 VERIFY_TOKEN = os.getenv("VERIFY_TOKEN", "verify_me")
 WA_TOKEN     = os.getenv("WA_TOKEN")               # << obligatorio
 WA_PHONE_ID  = os.getenv("WA_PHONE_ID", "")        # opcional (se puede leer del webhook)
